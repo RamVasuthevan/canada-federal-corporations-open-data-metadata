@@ -1,5 +1,4 @@
 name: Download, Extract, and Save Files
-
 on:
   workflow_dispatch:
     inputs:
@@ -11,7 +10,6 @@ on:
     types: [opened, synchronize, reopened]
   schedule:
     - cron: '0 5 * * *'  # This is midnight EST (5:00 UTC)
-
 jobs:
   process-files:
     runs-on: ubuntu-latest
@@ -19,6 +17,8 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
 
     - name: Set branch name
       run: |
@@ -27,7 +27,7 @@ jobs:
         elif [ "${{ github.event_name }}" = "pull_request" ]; then
           echo "BRANCH_NAME=${{ github.head_ref }}" >> $GITHUB_ENV
         else
-          echo "BRANCH_NAME=main" >> $GITHUB_ENV
+          echo "BRANCH_NAME=dont-unzip-large-xml" >> $GITHUB_ENV
         fi
 
     - name: Download files
@@ -35,17 +35,11 @@ jobs:
         wget -O dataset.html https://open.canada.ca/data/en/dataset/0032ce54-c5dd-4b66-99a0-320a7b5e99f2
         wget -O OPEN_DATA_SPLIT.zip https://ised-isde.canada.ca/cc/lgcy/download/OPEN_DATA_SPLIT.zip
 
-    - name: Unzip the file
-      run: unzip OPEN_DATA_SPLIT.zip
+    - name: Unzip the file (excluding large XML files)
+      run: unzip -n OPEN_DATA_SPLIT.zip -x 'OPEN_DATA_*.xml'
 
-    - name: Move extracted files
-      run: |
-        for file in OPEN_DATA_*.xml; do
-          if [ -f "$file" ]; then
-            mv -f "$file" ./ 2>/dev/null || true
-          fi
-        done
-        rm -f OPEN_DATA_SPLIT.zip
+    - name: Remove zip file
+      run: rm -f OPEN_DATA_SPLIT.zip
 
     - name: Configure Git
       run: |
@@ -55,12 +49,11 @@ jobs:
     - name: Create or switch to specified branch
       run: |
         git fetch origin
-        git checkout -B ${{ env.BRANCH_NAME }} origin/${{ env.BRANCH_NAME }} || git checkout -b ${{ env.BRANCH_NAME }}
-        git pull origin ${{ env.BRANCH_NAME }} || true
+        git checkout -B "${{ env.BRANCH_NAME }}" origin/"${{ env.BRANCH_NAME }}" || git checkout -b "${{ env.BRANCH_NAME }}"
 
     - name: Commit and push changes
       run: |
-        timestamp=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
         git add .
+        timestamp=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
         git commit -m "Downloaded: ${timestamp}: commit: ${{ github.sha }}" || echo "No changes to commit"
-        git push -u origin ${{ env.BRANCH_NAME }}
+        git push -f origin "${{ env.BRANCH_NAME }}"
