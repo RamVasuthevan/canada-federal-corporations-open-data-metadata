@@ -1,5 +1,4 @@
 name: Download, Extract, and Save Files
-
 on:
   workflow_dispatch:
     inputs:
@@ -11,7 +10,6 @@ on:
     types: [opened, synchronize, reopened]
   schedule:
     - cron: '0 5 * * *'  # This is midnight EST (5:00 UTC)
-
 jobs:
   process-files:
     runs-on: ubuntu-latest
@@ -35,16 +33,11 @@ jobs:
         wget -O dataset.html https://open.canada.ca/data/en/dataset/0032ce54-c5dd-4b66-99a0-320a7b5e99f2
         wget -O OPEN_DATA_SPLIT.zip https://ised-isde.canada.ca/cc/lgcy/download/OPEN_DATA_SPLIT.zip
 
-    - name: Unzip the file
-      run: unzip -x 'OPEN_DATA_*.xml' OPEN_DATA_SPLIT.zip
-    - name: Move extracted files
-      run: |
-        for file in OPEN_DATA_*.xml; do
-          if [ -f "$file" ]; then
-            mv -f "$file" ./ 2>/dev/null || true
-          fi
-        done
-        rm -f OPEN_DATA_SPLIT.zip
+    - name: Unzip the file (excluding large XML files)
+      run: unzip -n OPEN_DATA_SPLIT.zip -x 'OPEN_DATA_*.xml'
+
+    - name: Remove zip file
+      run: rm -f OPEN_DATA_SPLIT.zip
 
     - name: Configure Git
       run: |
