@@ -1,0 +1,1676 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ccc:codes xmlns:ccc="http://www.ic.gc.ca/corpcan/codes">
+  <code name="act">
+    <key value="1">
+      <full lang="en">Canada Corporations Act Part I - Private</full>
+      <full lang="fr">Loi sur les corporations canadiennes partie I - corporations privées</full>
+      <short lang="en">CCA - Part I</short>
+      <short lang="fr">LCC - Partie I</short>
+    </key>
+    <key value="2">
+      <full lang="en">Canada Corporations Act Part I - Public</full>
+      <full lang="fr">Loi sur les corporations canadiennes partie I - corporations publiques</full>
+      <short lang="en">CCA - Part I</short>
+      <short lang="fr">LCC - Partie I</short>
+    </key>
+    <key value="3">
+      <full lang="en">Canada Corporations Act - Part II</full>
+      <full lang="fr">Loi sur les corporations canadiennes - partie II</full>
+      <short lang="en">CCA - Part II</short>
+      <short lang="fr">LCC - Partie II</short>
+    </key>
+    <key value="4">
+      <full lang="en">Canada Cooperative Associations Act</full>
+      <full lang="fr">Loi sur les associations coopératives du Canada</full>
+      <short lang="en">CCAA</short>
+      <short lang="fr">LACC</short>
+    </key>
+    <key value="5">
+      <full lang="en">Pension Fund Societies Act</full>
+      <full lang="fr">Loi sur les sociétés de caisse de retraite</full>
+      <short lang="en">PFSA</short>
+      <short lang="fr">LSCR</short>
+    </key>
+    <key value="6">
+      <full lang="en">Canada Business Corporations Act</full>
+      <full lang="fr">Loi canadienne sur les sociétés par actions</full>
+      <short lang="en">CBCA</short>
+      <short lang="fr">LCSA</short>
+    </key>
+    <key value="7">
+      <full lang="en">Boards of Trade Act - Part I</full>
+      <full lang="fr">Loi sur les chambres de commerce - partie I</full>
+      <short lang="en">BOTA - Part I</short>
+      <short lang="fr">LCH - Partie I</short>
+    </key>
+    <key value="8">
+      <full lang="en">Boards of Trade Act - Part II</full>
+      <full lang="fr">Loi sur les chambres de commerce - partie II</full>
+      <short lang="en">BOTA - Part II</short>
+      <short lang="fr">LCH - Partie II</short>
+    </key>
+    <key value="9">
+      <full lang="en">Special Act of Parliament</full>
+      <full lang="fr">Loi spéciale du Parlement</full>
+      <short lang="en">SAOP</short>
+      <short lang="fr">LSP</short>
+    </key>
+    <key value="10">
+      <full lang="en">More than 1 Act Applicable</full>
+      <full lang="fr">Plus d'une loi applicable</full>
+    </key>
+    <key value="11">
+      <full lang="en">Bank Act</full>
+      <full lang="fr">Loi sur les banques</full>
+    </key>
+    <key value="12">
+      <full lang="en">Canada Cooperatives Act</full>
+      <full lang="fr">Loi canadienne sur les coopératives</full>
+      <short lang="en">Coop Act</short>
+      <short lang="fr">LCOOP</short>
+    </key>
+    <key value="13">
+      <full lang="en">Other</full>
+      <full lang="fr">Autres lois</full>
+      <short lang="en">Other</short>
+      <short lang="fr">Autre</short>
+    </key>
+    <key value="14">
+      <full lang="en">Canada Not-for-profit Corporations Act</full>
+      <full lang="fr">Loi canadienne sur les organisations à but non lucratif</full>
+      <short lang="en">NFP Act</short>
+      <short lang="fr">Loi BNL</short>
+    </key>
+  </code>
+  <code name="activity">
+    <key value="1">
+      <full lang="en">Incorporation</full>
+      <full lang="fr">Constitution en société</full>
+    </key>
+    <key value="2">
+      <full lang="en">Continuance (import)</full>
+      <full lang="fr">Prorogation (importation)</full>
+    </key>
+    <key value="3">
+      <full lang="en">Discontinuance</full>
+      <full lang="fr">Changement de régime</full>
+    </key>
+    <key value="4">
+      <full lang="en">Amalgamation</full>
+      <full lang="fr">Fusion</full>
+    </key>
+    <key value="7">
+      <full lang="en">Continuance (Act)</full>
+      <full lang="fr">Prorogation (Loi)</full>
+    </key>
+    <key value="14">
+      <full lang="en">Statement of Intent to Dissolve</full>
+      <full lang="fr">Déclaration d'intention de dissolution
+      </full>
+    </key>
+    <key value="15">
+      <full lang="en">Revocation of Intent to Dissolve</full>
+      <full lang="fr">Révocation d'intention de dissolution</full>
+    </key>
+    <key value="21">
+      <full lang="en">Amendment</full>
+      <full lang="fr">Modification</full>
+    </key>
+    <key value="101">
+      <full lang="en">Dissolution</full>
+      <full lang="fr">Dissolution</full>
+    </key>
+    <key value="104">
+      <full lang="en">Revival</full>
+      <full lang="fr">Reconstitution</full>
+    </key>
+    <key value="106">
+      <full lang="en">Proxy</full>
+      <full lang="fr">Procuration</full>
+    </key>
+    <key value="107">
+      <full lang="en">Financial Statement</full>
+      <full lang="fr">États financiers</full>
+    </key>
+    <key value="108">
+      <full lang="en">Restated Articles of Incorporation</full>
+      <full lang="fr">Status constitutifs mis à jours</full>
+    </key>
+    <key value="110">
+      <full lang="en">Arrangement</full>
+      <full lang="fr">Arrangement</full>
+    </key>
+    <key value="114">
+      <full lang="en">Ordinary By-Laws Filing</full>
+      <full lang="fr">Dépôt de règlement ordinaire </full>
+    </key>
+    <key value="120">
+      <full lang="en">Continuance (transition)</full>
+      <full lang="fr">Prorogation (transition)</full>
+    </key>
+  </code>
+  <code name="address">
+    <key value="2">
+      <full lang="en">Registered Office Address</full>
+      <full lang="fr">Adresse du siège</full>
+    </key>
+  </code>
+  <code name="name">
+    <key value="1">
+      <full lang="en">Corporate Name</full>
+      <full lang="fr">Dénomination sociale</full>
+    </key>
+    <key value="2">
+      <full lang="en">Corporate Name in the other official language (if applicable)</full>
+      <full lang="fr">Dénomination sociale dans l’autre langue officielle (s’il y a lieu)</full>
+    </key>
+  </code>
+  <code name="status">
+    <key value="1">
+      <full lang="en">Active</full>
+      <full lang="fr">Actif</full>
+    </key>
+    <key value="2">
+      <full lang="en">Active - Intent to Dissolve Filed</full>
+      <full lang="fr">Actif - Intention de dissolution déposée</full>
+    </key>
+    <key value="3">
+      <full lang="en">Active - Dissolution Pending (Non-compliance)</full>
+      <full lang="fr">Actif - Dissolution en cours (Non-conformité)</full>
+    </key>
+    <key value="4">
+      <full lang="en">Active - Discontinuance Pending</full>
+      <full lang="fr">Actif - Changement de régime en cours</full>
+    </key>
+    <key value="9">
+      <full lang="en">Inactive - Amalgamated</full>
+      <full lang="fr">Inactif - Fusionnée</full>
+    </key>
+    <key value="10">
+      <full lang="en">Inactive - Discontinued</full>
+      <full lang="fr">Inactif - Changement de régime</full>
+    </key>
+    <key value="11">
+      <full lang="en">Dissolved</full>
+      <full lang="fr">Dissoute</full>
+    </key>
+    <key value="19">
+      <full lang="en">Inactive</full>
+      <full lang="fr">Inactif</full>
+    </key>
+  </code>
+  <code name="typeOfCorporation">
+    <key value="1">
+      <full lang="en">Distributing corporation</full>
+      <full lang="fr">Société ayant fait appel au public</full>
+    </key>
+    <key value="2">
+      <full lang="en">Non-distributing corporation with 50 or fewer shareholders</full>
+      <full lang="fr">Société n'ayant pas appel au public et comptant 50 actionnaires ou moins</full>
+    </key>
+    <key value="3">
+      <full lang="en">Non-distributing corporation with more than 50 shareholders</full>
+      <full lang="fr">Société n'ayant pas fait appel au public et comptant plus de 50 actionnaires</full>
+    </key>
+    <key value="4">
+      <full lang="en">Not identified</full>
+      <full lang="fr">Pas identifié</full>
+    </key>
+    <key value="5">
+      <full lang="en">Soliciting</full>
+      <full lang="fr">Ayant recours à la sollicitation</full>
+    </key>
+    <key value="6">
+      <full lang="en">Non-Soliciting</full>
+      <full lang="fr">N'ayant pas recours à la sollicitation</full>
+    </key>
+    <key value="7">
+      <full lang="en">Distributes securities</full>
+      <full lang="fr">Émet des titres</full>
+    </key>
+    <key value="8">
+      <full lang="en">Does not distribute securities</full>
+      <full lang="fr">N'émet pas de titres</full>
+    </key>
+  </code>
+  <code name="section">
+    <key value="1">
+      <full lang="en">183</full>
+      <full lang="fr">183</full>
+    </key>
+    <key value="2">
+      <full lang="en">184 1</full>
+      <full lang="fr">184 1</full>
+    </key>
+    <key value="3">
+      <full lang="en">184 2</full>
+      <full lang="fr">184 2</full>
+    </key>
+    <key value="4">
+      <full lang="en">13</full>
+      <full lang="fr">13</full>
+    </key>
+    <key value="5">
+      <full lang="en">27</full>
+      <full lang="fr">27</full>
+    </key>
+    <key value="6">
+      <full lang="en">178</full>
+      <full lang="fr">178</full>
+    </key>
+    <key value="7">
+      <full lang="en">191</full>
+      <full lang="fr">191</full>
+    </key>
+    <key value="8">
+      <full lang="en">27, 178</full>
+      <full lang="fr">27, 178</full>
+    </key>
+    <key value="9">
+      <full lang="en">210(1)</full>
+      <full lang="fr">210(1)</full>
+    </key>
+    <key value="10">
+      <full lang="en">210(2)</full>
+      <full lang="fr">210(2)</full>
+    </key>
+    <key value="11">
+      <full lang="en">210(3)</full>
+      <full lang="fr">210(3)</full>
+    </key>
+    <key value="12">
+      <full lang="en">210</full>
+      <full lang="fr">210</full>
+    </key>
+    <key value="13">
+      <full lang="en">211</full>
+      <full lang="fr">211</full>
+    </key>
+    <key value="14">
+      <full lang="en">212</full>
+      <full lang="fr">212</full>
+    </key>
+    <key value="15">
+      <full lang="en">213</full>
+      <full lang="fr">213</full>
+    </key>
+    <key value="16">
+      <full lang="en">214</full>
+      <full lang="fr">214</full>
+    </key>
+    <key value="19">
+      <full lang="en">223</full>
+      <full lang="fr">223</full>
+    </key>
+    <key value="20">
+      <full lang="en">261(8)</full>
+      <full lang="fr">261(8)</full>
+    </key>
+    <key value="21">
+      <full lang="en">Part II of CCA</full>
+      <full lang="fr">Partie II de la LCC</full>
+    </key>
+    <key value="22">
+      <full lang="en">192</full>
+      <full lang="fr">192</full>
+    </key>
+    <key value="50">
+      <full lang="en">14</full>
+      <full lang="fr">14</full>
+    </key>
+    <key value="51">
+      <full lang="en">201</full>
+      <full lang="fr">201</full>
+    </key>
+    <key value="52">
+      <full lang="en">215</full>
+      <full lang="fr">215</full>
+    </key>
+    <key value="53">
+      <full lang="en">206</full>
+      <full lang="fr">206</full>
+    </key>
+    <key value="54">
+      <full lang="en">207(1)</full>
+      <full lang="fr">207(1)</full>
+    </key>
+    <key value="55">
+      <full lang="en">207(2)</full>
+      <full lang="fr">207(2)</full>
+    </key>
+    <key value="56">
+      <full lang="en">220(1)</full>
+      <full lang="fr">220(1)</full>
+    </key>
+    <key value="57">
+      <full lang="en">220(2)</full>
+      <full lang="fr">220(2)</full>
+    </key>
+    <key value="58">
+      <full lang="en">220(3)</full>
+      <full lang="fr">220(3)</full>
+    </key>
+    <key value="59">
+      <full lang="en">221</full>
+      <full lang="fr">221</full>
+    </key>
+    <key value="60">
+      <full lang="en">222</full>
+      <full lang="fr">222</full>
+    </key>
+    <key value="61">
+      <full lang="en">233</full>
+      <full lang="fr">233</full>
+    </key>
+    <key value="62">
+      <full lang="en">216</full>
+      <full lang="fr">216</full>
+    </key>
+  </code>
+  <code name="jurisdiction">
+    <key value="1">
+      <full lang="en">Bank Act</full>
+      <full lang="fr">Loi sur les banques</full>
+    </key>
+    <key value="2">
+      <full lang="en">Cooperatives Credit Associations Act</full>
+      <full lang="fr">Loi sur les associations coopératives de crédit</full>
+    </key>
+    <key value="3">
+      <full lang="en">Railway Act</full>
+      <full lang="fr">Loi sur les chemins de fer</full>
+    </key>
+    <key value="4">
+      <full lang="en">Insurance Companies Act</full>
+      <full lang="fr">Loi sur les sociétés d'assurances</full>
+    </key>
+    <key value="5">
+      <full lang="en">Trust and Loans Companies Act</full>
+      <full lang="fr">Loi sur les sociétés de fiducie et de prêt</full>
+    </key>
+    <key value="6">
+      <full lang="en">Canada Corporations Act - Part II (CCA-II)</full>
+      <full lang="fr">Loi sur les corporations canadiennes, partie 2 (LCC-Partie 2)</full>
+    </key>
+    <key value="7">
+      <full lang="en">Canada Cooperatives Act (COOP)</full>
+      <full lang="fr">Loi canadienne sur les coopératives (LCOOP)</full>
+    </key>
+    <key value="8">
+      <full lang="en">Canada Cooperative Associations Act (CCAA)</full>
+      <full lang="fr">Loi sur les associations coopératives du Canada (LACC)</full>
+    </key>
+    <key value="9">
+      <full lang="en">Pension Fund Societies Act (PFSA)</full>
+      <full lang="fr">Loi sur les sociétés de caisse de retraite (LSCR)</full>
+    </key>
+    <key value="10">
+      <full lang="en">Board of Trade Act - Part I (BOTA-I)</full>
+      <full lang="fr">Loi sur les chambres de commerce, partie 1 (LCH-partie 1)</full>
+    </key>
+    <key value="11">
+      <full lang="en">Board of Trade Act - Part II (BOTA-II)</full>
+      <full lang="fr">Loi sur les chambres de commerce, partie 2 (LCH-partie 1)</full>
+    </key>
+    <key value="12">
+      <full lang="en">Special Act of Parliament (SAOP)</full>
+      <full lang="fr">Loi spéciale du parlement (LSP)</full>
+    </key>
+    <key value="13">
+      <full lang="en">Trade Unions Act (TUA)</full>
+      <full lang="fr">Loi sur les syndicats ouvriers (LSO)</full>
+    </key>
+    <key value="14">
+      <full lang="en">Alberta</full>
+      <full lang="fr">Alberta</full>
+    </key>
+    <key value="15">
+      <full lang="en">British Columbia</full>
+      <full lang="fr">Colombie-Britannique</full>
+    </key>
+    <key value="16">
+      <full lang="en">Manitoba</full>
+      <full lang="fr">Manitoba</full>
+    </key>
+    <key value="17">
+      <full lang="en">New Brunswick</full>
+      <full lang="fr">Nouveau-Brunswick</full>
+    </key>
+    <key value="18">
+      <full lang="en">Newfoundland and Labrador</full>
+      <full lang="fr">Terre-Neuve et Labrador</full>
+    </key>
+    <key value="19">
+      <full lang="en">Northwest Territories</full>
+      <full lang="fr">Territoires du Nord-Ouest</full>
+    </key>
+    <key value="20">
+      <full lang="en">Nova Scotia</full>
+      <full lang="fr">Nouvelle-Écosse</full>
+    </key>
+    <key value="21">
+      <full lang="en">Nunavut Territory</full>
+      <full lang="fr">Nunavut</full>
+    </key>
+    <key value="22">
+      <full lang="en">Ontario</full>
+      <full lang="fr">Ontario</full>
+    </key>
+    <key value="23">
+      <full lang="en">Prince Edward Island</full>
+      <full lang="fr">Île-du-Prince-Édouard</full>
+    </key>
+    <key value="24">
+      <full lang="en">Quebec</full>
+      <full lang="fr">Québec</full>
+    </key>
+    <key value="25">
+      <full lang="en">Saskatchewan</full>
+      <full lang="fr">Saskatchewan</full>
+    </key>
+    <key value="26">
+      <full lang="en">Yukon Territory</full>
+      <full lang="fr">Territoire du Yukon</full>
+    </key>
+    <key value="27">
+      <full lang="en">Anguilla</full>
+      <full lang="fr">Anguilla</full>
+    </key>
+    <key value="28">
+      <full lang="en">Antigua and Barbuda</full>
+      <full lang="fr">Antigua-et-Barbuda</full>
+    </key>
+    <key value="29">
+      <full lang="en">Bahamas</full>
+      <full lang="fr">Bahamas</full>
+    </key>
+    <key value="30">
+      <full lang="en">Barbados</full>
+      <full lang="fr">Barbade</full>
+    </key>
+    <key value="31">
+      <full lang="en">Bermuda</full>
+      <full lang="fr">Bermudes</full>
+    </key>
+    <key value="32">
+      <full lang="en">British Virgin Islands</full>
+      <full lang="fr">Iles Vierges Britanniques</full>
+    </key>
+    <key value="33">
+      <full lang="en">Cayman Islands</full>
+      <full lang="fr">Îles Caïmans</full>
+    </key>
+    <key value="34">
+      <full lang="en">Delaware</full>
+      <full lang="fr">Delaware</full>
+    </key>
+    <key value="35">
+      <full lang="en">Florida</full>
+      <full lang="fr">Floride</full>
+    </key>
+    <key value="36">
+      <full lang="en">Gibraltar</full>
+      <full lang="fr">Gibraltar</full>
+    </key>
+    <key value="37">
+      <full lang="en">Jersey, Channel Islands</full>
+      <full lang="fr">Jersey, Channel Islands</full>
+    </key>
+    <key value="38">
+      <full lang="en">Luxembourg</full>
+      <full lang="fr">Luxembourg</full>
+    </key>
+    <key value="39">
+      <full lang="en">Malta</full>
+      <full lang="fr">Malta</full>
+    </key>
+    <key value="40">
+      <full lang="en">Nevada</full>
+      <full lang="fr">Nevada</full>
+    </key>
+    <key value="41">
+      <full lang="en">Oregon</full>
+      <full lang="fr">Oregon</full>
+    </key>
+    <key value="42">
+      <full lang="en">Republic of Cyprus</full>
+      <full lang="fr">République de Chypre</full>
+    </key>
+    <key value="43">
+      <full lang="en">Switzerland</full>
+      <full lang="fr">Suisse</full>
+    </key>
+    <key value="44">
+      <full lang="en">Texas</full>
+      <full lang="fr">Texas</full>
+    </key>
+    <key value="45">
+      <full lang="en">Turks and Caicos</full>
+      <full lang="fr">Torques et Caicos</full>
+    </key>
+    <key value="46">
+      <full lang="en">Wisconsin</full>
+      <full lang="fr">Wisconsin</full>
+    </key>
+    <key value="47">
+      <full lang="en">Wyoming</full>
+      <full lang="fr">Wyoming</full>
+    </key>
+    <key value="48">
+      <full lang="en">Other</full>
+      <full lang="fr">Autre</full>
+    </key>
+    <key value="49">
+      <full lang="en">SPE/SPEC</full>
+      <full lang="fr">SPE/SPEC</full>
+    </key>
+    <key value="50">
+      <full lang="en">OFSI/OSFI</full>
+      <full lang="fr">OFSI/OSFI</full>
+    </key>
+    <key value="51">
+      <full lang="en">CBCA</full>
+      <full lang="fr">CBCA</full>
+    </key>
+    <key value="94">
+      <full lang="en">New York</full>
+      <full lang="fr">New York</full>
+    </key>
+    <key value="95">
+      <full lang="en">France</full>
+      <full lang="fr">France</full>
+    </key>
+    <key value="96">
+      <full lang="en">Massachusetts</full>
+      <full lang="fr">Massachusetts</full>
+    </key>
+    <key value="97">
+      <full lang="en">Ohio</full>
+      <full lang="fr">Ohio</full>
+    </key>
+    <key value="98">
+      <full lang="en">Arizona</full>
+      <full lang="fr">Arizona</full>
+    </key>
+    <key value="99">
+      <full lang="en">Liechtenstein</full>
+      <full lang="fr">Liechtenstein</full>
+    </key>
+    <key value="100">
+      <full lang="en">Colorado</full>
+      <full lang="fr">Colorado</full>
+    </key>
+    <key value="101">
+      <full lang="en">Colorado</full>
+      <full lang="fr">Colorado</full>
+    </key>
+    <key value="102">
+      <full lang="en">Colorado</full>
+      <full lang="fr">Colorado</full>
+    </key>
+    <key value="103">
+      <full lang="en">Colorado</full>
+      <full lang="fr">Colorado</full>
+    </key>
+    <key value="104">
+      <full lang="en">Belgium</full>
+      <full lang="fr">Belgique</full>
+    </key>
+    <key value="105">
+      <full lang="en">Mexico</full>
+      <full lang="fr">Mexique</full>
+    </key>
+    <key value="150">
+      <full lang="en">Canada Not-for-profit Corporations Act</full>
+      <full lang="fr">Loi canadienne sur les organisations à but non lucratif</full>
+    </key>
+    <key value="151">
+      <full lang="en">Canada Business Corporations Act</full>
+      <full lang="fr">Loi canadienne sur les sociétés par actions</full>
+    </key>
+  </code>
+  <code name="country">
+    <key value="AF">
+      <full lang="en">Afghanistan</full>
+      <full lang="fr">Afghanistan</full>
+    </key>
+    <key value="AL">
+      <full lang="en">Albania</full>
+      <full lang="fr">Albanie</full>
+    </key>
+    <key value="AQ">
+      <full lang="en">Antarctica</full>
+      <full lang="fr">Antarctique</full>
+    </key>
+    <key value="DZ">
+      <full lang="en">Algeria</full>
+      <full lang="fr">Algérie</full>
+    </key>
+    <key value="AS">
+      <full lang="en">American Samoa</full>
+      <full lang="fr">Samoa américaines</full>
+    </key>
+    <key value="AD">
+      <full lang="en">Andorra</full>
+      <full lang="fr">Andorre</full>
+    </key>
+    <key value="AO">
+      <full lang="en">Angola</full>
+      <full lang="fr">Angola</full>
+    </key>
+    <key value="AG">
+      <full lang="en">Antigua and Barbuda</full>
+      <full lang="fr">Antigua-et-Barbuda</full>
+    </key>
+    <key value="AZ">
+      <full lang="en">Azerbaijan</full>
+      <full lang="fr">Azerbaïdjan</full>
+    </key>
+    <key value="AR">
+      <full lang="en">Argentina</full>
+      <full lang="fr">Argentine</full>
+    </key>
+    <key value="AU">
+      <full lang="en">Australia</full>
+      <full lang="fr">Australie</full>
+    </key>
+    <key value="AT">
+      <full lang="en">Austria</full>
+      <full lang="fr">Autriche</full>
+    </key>
+    <key value="BS">
+      <full lang="en">Bahamas</full>
+      <full lang="fr">Bahamas</full>
+    </key>
+    <key value="BH">
+      <full lang="en">Bahrain</full>
+      <full lang="fr">Bahreïn</full>
+    </key>
+    <key value="BD">
+      <full lang="en">Bangladesh</full>
+      <full lang="fr">Bangladesh</full>
+    </key>
+    <key value="AM">
+      <full lang="en">Armenia</full>
+      <full lang="fr">Arménie</full>
+    </key>
+    <key value="BB">
+      <full lang="en">Barbados</full>
+      <full lang="fr">Barbade</full>
+    </key>
+    <key value="BE">
+      <full lang="en">Belgium</full>
+      <full lang="fr">Belgique</full>
+    </key>
+    <key value="BM">
+      <full lang="en">Bermuda</full>
+      <full lang="fr">Bermudes</full>
+    </key>
+    <key value="BT">
+      <full lang="en">Bhutan</full>
+      <full lang="fr">Bhoutan</full>
+    </key>
+    <key value="BO">
+      <full lang="en">Bolivia, Plurinational State of</full>
+      <full lang="fr">Bolivie, L'État Plurinational de</full>
+    </key>
+    <key value="BA">
+      <full lang="en">Bosnia and Herzegovina</full>
+      <full lang="fr">Bosnie-Herzégovine</full>
+    </key>
+    <key value="BW">
+      <full lang="en">Botswana</full>
+      <full lang="fr">Botswana</full>
+    </key>
+    <key value="BV">
+      <full lang="en">Bouvet Island</full>
+      <full lang="fr">Bouvet, Île</full>
+    </key>
+    <key value="BR">
+      <full lang="en">Brazil</full>
+      <full lang="fr">Brésil</full>
+    </key>
+    <key value="BZ">
+      <full lang="en">Belize</full>
+      <full lang="fr">Belize</full>
+    </key>
+    <key value="IO">
+      <full lang="en">British Indian Ocean Territory</full>
+      <full lang="fr">Océan Indien, Territoire britannique de l'</full>
+    </key>
+    <key value="SB">
+      <full lang="en">Solomon Islands</full>
+      <full lang="fr">Salomon, Îles</full>
+    </key>
+    <key value="VG">
+      <full lang="en">Virgin Islands (British)</full>
+      <full lang="fr">Îles Vierges britanniques</full>
+    </key>
+    <key value="BN">
+      <full lang="en">Brunei Darussalam</full>
+      <full lang="fr">Brunei Darussalam</full>
+    </key>
+    <key value="BG">
+      <full lang="en">Bulgaria</full>
+      <full lang="fr">Bulgarie</full>
+    </key>
+    <key value="MM">
+      <full lang="en">Myanmar</full>
+      <full lang="fr">Myanmar</full>
+    </key>
+    <key value="BI">
+      <full lang="en">Burundi</full>
+      <full lang="fr">Burundi</full>
+    </key>
+    <key value="BY">
+      <full lang="en">Belarus</full>
+      <full lang="fr">Bélarus</full>
+    </key>
+    <key value="KH">
+      <full lang="en">Cambodia</full>
+      <full lang="fr">Cambodge</full>
+    </key>
+    <key value="CM">
+      <full lang="en">Cameroon</full>
+      <full lang="fr">Cameroun</full>
+    </key>
+    <key value="CA">
+      <full lang="en">Canada</full>
+      <full lang="fr">Canada</full>
+    </key>
+    <key value="CV">
+      <full lang="en">Cabo Verde</full>
+      <full lang="fr">Cabo Verde</full>
+    </key>
+    <key value="KY">
+      <full lang="en">Cayman Islands</full>
+      <full lang="fr">Caïmans, Îles</full>
+    </key>
+    <key value="CF">
+      <full lang="en">Central African Republic</full>
+      <full lang="fr">Centrafricaine, République</full>
+    </key>
+    <key value="LK">
+      <full lang="en">Sri Lanka</full>
+      <full lang="fr">Sri Lanka</full>
+    </key>
+    <key value="TD">
+      <full lang="en">Chad</full>
+      <full lang="fr">Tchad</full>
+    </key>
+    <key value="CL">
+      <full lang="en">Chile</full>
+      <full lang="fr">Chili</full>
+    </key>
+    <key value="CN">
+      <full lang="en">China</full>
+      <full lang="fr">Chine</full>
+    </key>
+    <key value="TW">
+      <full lang="en">Taiwan</full>
+      <full lang="fr">Taiwan</full>
+    </key>
+    <key value="CX">
+      <full lang="en">Christmas Island</full>
+      <full lang="fr">Christmas, Île</full>
+    </key>
+    <key value="CC">
+      <full lang="en">Cocos (Keeling) Islands</full>
+      <full lang="fr">Cocos (Keeling), Îles</full>
+    </key>
+    <key value="CO">
+      <full lang="en">Colombia</full>
+      <full lang="fr">Colombie</full>
+    </key>
+    <key value="KM">
+      <full lang="en">Comoros</full>
+      <full lang="fr">Comores</full>
+    </key>
+    <key value="YT">
+      <full lang="en">Mayotte</full>
+      <full lang="fr">Mayotte</full>
+    </key>
+    <key value="CG">
+      <full lang="en">Congo</full>
+      <full lang="fr">Congo</full>
+    </key>
+    <key value="CD">
+      <full lang="en">Congo, The Democratic Republic of the</full>
+      <full lang="fr">Congo, La République Démocratique du</full>
+    </key>
+    <key value="CK">
+      <full lang="en">Cook Islands</full>
+      <full lang="fr">Cook, Îles</full>
+    </key>
+    <key value="CR">
+      <full lang="en">Costa Rica</full>
+      <full lang="fr">Costa Rica</full>
+    </key>
+    <key value="HR">
+      <full lang="en">Croatia</full>
+      <full lang="fr">Croatie</full>
+    </key>
+    <key value="CU">
+      <full lang="en">Cuba</full>
+      <full lang="fr">Cuba</full>
+    </key>
+    <key value="CY">
+      <full lang="en">Cyprus</full>
+      <full lang="fr">Chypre</full>
+    </key>
+    <key value="CZ">
+      <full lang="en">Czech Republic</full>
+      <full lang="fr">Tchèque, République</full>
+    </key>
+    <key value="BJ">
+      <full lang="en">Benin</full>
+      <full lang="fr">Bénin</full>
+    </key>
+    <key value="DK">
+      <full lang="en">Denmark</full>
+      <full lang="fr">Danemark</full>
+    </key>
+    <key value="DM">
+      <full lang="en">Dominica</full>
+      <full lang="fr">Dominique</full>
+    </key>
+    <key value="DO">
+      <full lang="en">Dominican Republic</full>
+      <full lang="fr">Dominicaine, République</full>
+    </key>
+    <key value="EC">
+      <full lang="en">Ecuador</full>
+      <full lang="fr">Équateur</full>
+    </key>
+    <key value="SV">
+      <full lang="en">El Salvador</full>
+      <full lang="fr">El Salvador</full>
+    </key>
+    <key value="GQ">
+      <full lang="en">Equatorial Guinea</full>
+      <full lang="fr">Guinée équatoriale</full>
+    </key>
+    <key value="ET">
+      <full lang="en">Ethiopia</full>
+      <full lang="fr">Éthiopie</full>
+    </key>
+    <key value="ER">
+      <full lang="en">Eritrea</full>
+      <full lang="fr">Érythrée</full>
+    </key>
+    <key value="EE">
+      <full lang="en">Estonia</full>
+      <full lang="fr">Estonie</full>
+    </key>
+    <key value="FO">
+      <full lang="en">Faroe Islands</full>
+      <full lang="fr">Féroé, Îles</full>
+    </key>
+    <key value="FK">
+      <full lang="en">Falkland Islands (Malvinas)</full>
+      <full lang="fr">Falkland, Îles (Malvinas)</full>
+    </key>
+    <key value="GS">
+      <full lang="en">South Georgia and The South Sandwich Islands</full>
+      <full lang="fr">Géorgie du sud-et-les Îles Sandwich du sud</full>
+    </key>
+    <key value="FJ">
+      <full lang="en">Fiji</full>
+      <full lang="fr">Fidji</full>
+    </key>
+    <key value="FI">
+      <full lang="en">Finland</full>
+      <full lang="fr">Finlande</full>
+    </key>
+    <key value="AX">
+      <full lang="en">Åland Islands</full>
+      <full lang="fr">Îles d'Åland</full>
+    </key>
+    <key value="FR">
+      <full lang="en">France</full>
+      <full lang="fr">France</full>
+    </key>
+    <key value="GF">
+      <full lang="en">French Guiana</full>
+      <full lang="fr">Guyane française</full>
+    </key>
+    <key value="PF">
+      <full lang="en">French Polynesia</full>
+      <full lang="fr">Polynésie française</full>
+    </key>
+    <key value="TF">
+      <full lang="en">French Southern Territories</full>
+      <full lang="fr">Terres australes françaises</full>
+    </key>
+    <key value="DJ">
+      <full lang="en">Djibouti</full>
+      <full lang="fr">Djibouti</full>
+    </key>
+    <key value="GA">
+      <full lang="en">Gabon</full>
+      <full lang="fr">Gabon</full>
+    </key>
+    <key value="GE">
+      <full lang="en">Georgia</full>
+      <full lang="fr">Géorgie</full>
+    </key>
+    <key value="GM">
+      <full lang="en">Gambia</full>
+      <full lang="fr">Gambie</full>
+    </key>
+    <key value="PS">
+      <full lang="en">Palestinian Territory, Occupied</full>
+      <full lang="fr">Palestinien Occupé, Territoire</full>
+    </key>
+    <key value="DE">
+      <full lang="en">Germany</full>
+      <full lang="fr">Allemagne</full>
+    </key>
+    <key value="GH">
+      <full lang="en">Ghana</full>
+      <full lang="fr">Ghana</full>
+    </key>
+    <key value="GI">
+      <full lang="en">Gibraltar</full>
+      <full lang="fr">Gibraltar</full>
+    </key>
+    <key value="KI">
+      <full lang="en">Kiribati</full>
+      <full lang="fr">Kiribati</full>
+    </key>
+    <key value="GR">
+      <full lang="en">Greece</full>
+      <full lang="fr">Grèce</full>
+    </key>
+    <key value="GL">
+      <full lang="en">Greenland</full>
+      <full lang="fr">Groenland</full>
+    </key>
+    <key value="GD">
+      <full lang="en">Grenada</full>
+      <full lang="fr">Grenade</full>
+    </key>
+    <key value="GP">
+      <full lang="en">Guadeloupe</full>
+      <full lang="fr">Guadeloupe</full>
+    </key>
+    <key value="GU">
+      <full lang="en">Guam</full>
+      <full lang="fr">Guam</full>
+    </key>
+    <key value="GT">
+      <full lang="en">Guatemala</full>
+      <full lang="fr">Guatemala</full>
+    </key>
+    <key value="GN">
+      <full lang="en">Guinea</full>
+      <full lang="fr">Guinée</full>
+    </key>
+    <key value="GY">
+      <full lang="en">Guyana</full>
+      <full lang="fr">Guyana</full>
+    </key>
+    <key value="HT">
+      <full lang="en">Haiti</full>
+      <full lang="fr">Haïti</full>
+    </key>
+    <key value="HM">
+      <full lang="en">Heard Island and McDonald Islands</full>
+      <full lang="fr">Heard-et-Île McDonald, Île</full>
+    </key>
+    <key value="VA">
+      <full lang="en">Holy See (Vatican City State)</full>
+      <full lang="fr">Saint-Siège (État de la Cité du Vatican)</full>
+    </key>
+    <key value="HN">
+      <full lang="en">Honduras</full>
+      <full lang="fr">Honduras</full>
+    </key>
+    <key value="HK">
+      <full lang="en">Hong Kong</full>
+      <full lang="fr">Hong-Kong</full>
+    </key>
+    <key value="HU">
+      <full lang="en">Hungary</full>
+      <full lang="fr">Hongrie</full>
+    </key>
+    <key value="IS">
+      <full lang="en">Iceland</full>
+      <full lang="fr">Islande</full>
+    </key>
+    <key value="IN">
+      <full lang="en">India</full>
+      <full lang="fr">Inde</full>
+    </key>
+    <key value="ID">
+      <full lang="en">Indonesia</full>
+      <full lang="fr">Indonésie</full>
+    </key>
+    <key value="IR">
+      <full lang="en">Iran, Islamic Republic of</full>
+      <full lang="fr">Iran, République Islamique d'</full>
+    </key>
+    <key value="IQ">
+      <full lang="en">Iraq</full>
+      <full lang="fr">Iraq</full>
+    </key>
+    <key value="IE">
+      <full lang="en">Ireland</full>
+      <full lang="fr">Irlande</full>
+    </key>
+    <key value="IL">
+      <full lang="en">Israel</full>
+      <full lang="fr">Israël</full>
+    </key>
+    <key value="IT">
+      <full lang="en">Italy</full>
+      <full lang="fr">Italie</full>
+    </key>
+    <key value="CI">
+      <full lang="en">Côte d'Ivoire</full>
+      <full lang="fr">Côte d'Ivoire</full>
+    </key>
+    <key value="JM">
+      <full lang="en">Jamaica</full>
+      <full lang="fr">Jamaïque</full>
+    </key>
+    <key value="JP">
+      <full lang="en">Japan</full>
+      <full lang="fr">Japon</full>
+    </key>
+    <key value="KZ">
+      <full lang="en">Kazakhstan</full>
+      <full lang="fr">Kazakhstan</full>
+    </key>
+    <key value="JO">
+      <full lang="en">Jordan</full>
+      <full lang="fr">Jordanie</full>
+    </key>
+    <key value="KE">
+      <full lang="en">Kenya</full>
+      <full lang="fr">Kenya</full>
+    </key>
+    <key value="KP">
+      <full lang="en">Korea, Democratic People's Republic of</full>
+      <full lang="fr">Corée, République Populaire Démocratique de</full>
+    </key>
+    <key value="KR">
+      <full lang="en">Korea, Republic of</full>
+      <full lang="fr">Corée, République de</full>
+    </key>
+    <key value="KW">
+      <full lang="en">Kuwait</full>
+      <full lang="fr">Koweït</full>
+    </key>
+    <key value="KG">
+      <full lang="en">Kyrgyzstan</full>
+      <full lang="fr">Kirghizistan</full>
+    </key>
+    <key value="LA">
+      <full lang="en">Lao People's Democratic Republic</full>
+      <full lang="fr">Lao, République Démocratique Populaire</full>
+    </key>
+    <key value="LB">
+      <full lang="en">Lebanon</full>
+      <full lang="fr">Liban</full>
+    </key>
+    <key value="LS">
+      <full lang="en">Lesotho</full>
+      <full lang="fr">Lesotho</full>
+    </key>
+    <key value="LV">
+      <full lang="en">Latvia</full>
+      <full lang="fr">Lettonie</full>
+    </key>
+    <key value="LR">
+      <full lang="en">Liberia</full>
+      <full lang="fr">Libéria</full>
+    </key>
+    <key value="LY">
+      <full lang="en">Libyan Arab Jamahiriya</full>
+      <full lang="fr">Libyenne, Jamahiriya Arabe</full>
+    </key>
+    <key value="LI">
+      <full lang="en">Liechtenstein</full>
+      <full lang="fr">Liechtenstein</full>
+    </key>
+    <key value="LT">
+      <full lang="en">Lithuania</full>
+      <full lang="fr">Lituanie</full>
+    </key>
+    <key value="LU">
+      <full lang="en">Luxembourg</full>
+      <full lang="fr">Luxembourg</full>
+    </key>
+    <key value="MO">
+      <full lang="en">Macao</full>
+      <full lang="fr">Macao</full>
+    </key>
+    <key value="MG">
+      <full lang="en">Madagascar</full>
+      <full lang="fr">Madagascar</full>
+    </key>
+    <key value="MW">
+      <full lang="en">Malawi</full>
+      <full lang="fr">Malawi</full>
+    </key>
+    <key value="MY">
+      <full lang="en">Malaysia</full>
+      <full lang="fr">Malaisie</full>
+    </key>
+    <key value="MV">
+      <full lang="en">Maldives</full>
+      <full lang="fr">Maldives</full>
+    </key>
+    <key value="ML">
+      <full lang="en">Mali</full>
+      <full lang="fr">Mali</full>
+    </key>
+    <key value="MT">
+      <full lang="en">Malta</full>
+      <full lang="fr">Malte</full>
+    </key>
+    <key value="MQ">
+      <full lang="en">Martinique</full>
+      <full lang="fr">Martinique</full>
+    </key>
+    <key value="MR">
+      <full lang="en">Mauritania</full>
+      <full lang="fr">Mauritanie</full>
+    </key>
+    <key value="MU">
+      <full lang="en">Mauritius</full>
+      <full lang="fr">Maurice</full>
+    </key>
+    <key value="MX">
+      <full lang="en">Mexico</full>
+      <full lang="fr">Mexique</full>
+    </key>
+    <key value="MC">
+      <full lang="en">Monaco</full>
+      <full lang="fr">Monaco</full>
+    </key>
+    <key value="MN">
+      <full lang="en">Mongolia</full>
+      <full lang="fr">Mongolie</full>
+    </key>
+    <key value="MD">
+      <full lang="en">Moldova, Republic of</full>
+      <full lang="fr">Moldova, République de</full>
+    </key>
+    <key value="ME">
+      <full lang="en">Montenegro</full>
+      <full lang="fr">Monténégro</full>
+    </key>
+    <key value="MS">
+      <full lang="en">Montserrat</full>
+      <full lang="fr">Montserrat</full>
+    </key>
+    <key value="MA">
+      <full lang="en">Morocco</full>
+      <full lang="fr">Maroc</full>
+    </key>
+    <key value="MZ">
+      <full lang="en">Mozambique</full>
+      <full lang="fr">Mozambique</full>
+    </key>
+    <key value="OM">
+      <full lang="en">Oman</full>
+      <full lang="fr">Oman</full>
+    </key>
+    <key value="NA">
+      <full lang="en">Namibia</full>
+      <full lang="fr">Namibie</full>
+    </key>
+    <key value="NR">
+      <full lang="en">Nauru</full>
+      <full lang="fr">Nauru</full>
+    </key>
+    <key value="NP">
+      <full lang="en">Nepal</full>
+      <full lang="fr">Népal</full>
+    </key>
+    <key value="NL">
+      <full lang="en">Netherlands</full>
+      <full lang="fr">Pays-Bas</full>
+    </key>
+    <key value="AN">
+      <full lang="en">Netherlands Antilles</full>
+      <full lang="fr">Antilles néerlandaises</full>
+    </key>
+    <key value="AW">
+      <full lang="en">Aruba</full>
+      <full lang="fr">Aruba</full>
+    </key>
+    <key value="NC">
+      <full lang="en">New Caledonia</full>
+      <full lang="fr">Nouvelle-Calédonie</full>
+    </key>
+    <key value="VU">
+      <full lang="en">Vanuatu</full>
+      <full lang="fr">Vanuatu</full>
+    </key>
+    <key value="NZ">
+      <full lang="en">New Zealand</full>
+      <full lang="fr">Nouvelle-Zélande</full>
+    </key>
+    <key value="NI">
+      <full lang="en">Nicaragua</full>
+      <full lang="fr">Nicaragua</full>
+    </key>
+    <key value="NE">
+      <full lang="en">Niger</full>
+      <full lang="fr">Niger</full>
+    </key>
+    <key value="NG">
+      <full lang="en">Nigeria</full>
+      <full lang="fr">Nigéria</full>
+    </key>
+    <key value="NU">
+      <full lang="en">Niue</full>
+      <full lang="fr">Niue</full>
+    </key>
+    <key value="NF">
+      <full lang="en">Norfolk Island</full>
+      <full lang="fr">Norfolk, Île</full>
+    </key>
+    <key value="NO">
+      <full lang="en">Norway</full>
+      <full lang="fr">Norvège</full>
+    </key>
+    <key value="MP">
+      <full lang="en">Northern Mariana Islands</full>
+      <full lang="fr">Mariannes du Nord, Îles</full>
+    </key>
+    <key value="UM">
+      <full lang="en">United States Minor Outlying Islands</full>
+      <full lang="fr">Îles mineures éloignées des États-Unis</full>
+    </key>
+    <key value="FM">
+      <full lang="en">Micronesia, Federated States of</full>
+      <full lang="fr">Micronésie, États fédérés de</full>
+    </key>
+    <key value="MH">
+      <full lang="en">Marshall Islands</full>
+      <full lang="fr">Marshall, Îles</full>
+    </key>
+    <key value="PW">
+      <full lang="en">Palau</full>
+      <full lang="fr">Palaos</full>
+    </key>
+    <key value="PK">
+      <full lang="en">Pakistan</full>
+      <full lang="fr">Pakistan</full>
+    </key>
+    <key value="PA">
+      <full lang="en">Panama</full>
+      <full lang="fr">Panama</full>
+    </key>
+    <key value="PG">
+      <full lang="en">Papua New Guinea</full>
+      <full lang="fr">Papouasie-Nouvelle-Guinée</full>
+    </key>
+    <key value="PY">
+      <full lang="en">Paraguay</full>
+      <full lang="fr">Paraguay</full>
+    </key>
+    <key value="PE">
+      <full lang="en">Peru</full>
+      <full lang="fr">Pérou</full>
+    </key>
+    <key value="PH">
+      <full lang="en">Philippines</full>
+      <full lang="fr">Philippines</full>
+    </key>
+    <key value="PN">
+      <full lang="en">Pitcairn</full>
+      <full lang="fr">Pitcairn</full>
+    </key>
+    <key value="PL">
+      <full lang="en">Poland</full>
+      <full lang="fr">Pologne</full>
+    </key>
+    <key value="PT">
+      <full lang="en">Portugal</full>
+      <full lang="fr">Portugal</full>
+    </key>
+    <key value="GW">
+      <full lang="en">Guinea-Bissau</full>
+      <full lang="fr">Guinée-Bissau</full>
+    </key>
+    <key value="TL">
+      <full lang="en">Timor-Leste</full>
+      <full lang="fr">Timor-Leste</full>
+    </key>
+    <key value="PR">
+      <full lang="en">Puerto Rico</full>
+      <full lang="fr">Porto Rico</full>
+    </key>
+    <key value="QA">
+      <full lang="en">Qatar</full>
+      <full lang="fr">Qatar</full>
+    </key>
+    <key value="RE">
+      <full lang="en">Réunion</full>
+      <full lang="fr">Réunion</full>
+    </key>
+    <key value="RO">
+      <full lang="en">Romania</full>
+      <full lang="fr">Roumanie</full>
+    </key>
+    <key value="RU">
+      <full lang="en">Russian Federation</full>
+      <full lang="fr">Russie, Fédération de</full>
+    </key>
+    <key value="RW">
+      <full lang="en">Rwanda</full>
+      <full lang="fr">Rwanda</full>
+    </key>
+    <key value="BL">
+      <full lang="en">Saint-Barthélemy</full>
+      <full lang="fr">Saint-Barthélemy</full>
+    </key>
+    <key value="SH">
+      <full lang="en">Saint Helena, Ascension and Tristan da Cunha</full>
+      <full lang="fr">Sainte-Hélène, Ascension et Tristan da Cunha</full>
+    </key>
+    <key value="KN">
+      <full lang="en">Saint Kitts and Nevis</full>
+      <full lang="fr">Saint-Kitts-et-Nevis</full>
+    </key>
+    <key value="AI">
+      <full lang="en">Anguilla</full>
+      <full lang="fr">Anguilla</full>
+    </key>
+    <key value="LC">
+      <full lang="en">Saint Lucia</full>
+      <full lang="fr">Sainte-Lucie</full>
+    </key>
+    <key value="MF">
+      <full lang="en">Saint Martin (French Part)</full>
+      <full lang="fr">Saint Martin (Partie Française)</full>
+    </key>
+    <key value="PM">
+      <full lang="en">Saint Pierre and Miquelon</full>
+      <full lang="fr">Saint-Pierre-et-Miquelon</full>
+    </key>
+    <key value="VC">
+      <full lang="en">Saint Vincent and the Grenadines</full>
+      <full lang="fr">Saint-Vincent-et-les Grenadines</full>
+    </key>
+    <key value="SM">
+      <full lang="en">San Marino</full>
+      <full lang="fr">Saint-Marin</full>
+    </key>
+    <key value="ST">
+      <full lang="en">Sao Tome and Principe</full>
+      <full lang="fr">Sao Tomé-et-Principe</full>
+    </key>
+    <key value="SA">
+      <full lang="en">Saudi Arabia</full>
+      <full lang="fr">Arabie saoudite</full>
+    </key>
+    <key value="SN">
+      <full lang="en">Senegal</full>
+      <full lang="fr">Sénégal</full>
+    </key>
+    <key value="RS">
+      <full lang="en">Serbia</full>
+      <full lang="fr">Serbie</full>
+    </key>
+    <key value="SC">
+      <full lang="en">Seychelles</full>
+      <full lang="fr">Seychelles</full>
+    </key>
+    <key value="SL">
+      <full lang="en">Sierra Leone</full>
+      <full lang="fr">Sierra Leone</full>
+    </key>
+    <key value="SG">
+      <full lang="en">Singapore</full>
+      <full lang="fr">Singapour</full>
+    </key>
+    <key value="SK">
+      <full lang="en">Slovakia</full>
+      <full lang="fr">Slovaquie</full>
+    </key>
+    <key value="VN">
+      <full lang="en">Viet Nam</full>
+      <full lang="fr">Viet Nam</full>
+    </key>
+    <key value="SI">
+      <full lang="en">Slovenia</full>
+      <full lang="fr">Slovénie</full>
+    </key>
+    <key value="SO">
+      <full lang="en">Somalia</full>
+      <full lang="fr">Somalie</full>
+    </key>
+    <key value="ZA">
+      <full lang="en">South Africa</full>
+      <full lang="fr">Afrique du Sud</full>
+    </key>
+    <key value="ZW">
+      <full lang="en">Zimbabwe</full>
+      <full lang="fr">Zimbabwe</full>
+    </key>
+    <key value="ES">
+      <full lang="en">Spain</full>
+      <full lang="fr">Espagne</full>
+    </key>
+    <key value="EH">
+      <full lang="en">Western Sahara</full>
+      <full lang="fr">Sahara Occidental</full>
+    </key>
+    <key value="SD">
+      <full lang="en">Sudan</full>
+      <full lang="fr">Soudan</full>
+    </key>
+    <key value="SR">
+      <full lang="en">Suriname</full>
+      <full lang="fr">Suriname</full>
+    </key>
+    <key value="SJ">
+      <full lang="en">Svlabard and Jan Mayen</full>
+      <full lang="fr">Svalbard et Île Jan Mayen</full>
+    </key>
+    <key value="SZ">
+      <full lang="en">Swaziland</full>
+      <full lang="fr">Swaziland</full>
+    </key>
+    <key value="SE">
+      <full lang="en">Sweden</full>
+      <full lang="fr">Suède</full>
+    </key>
+    <key value="CH">
+      <full lang="en">Switzerland</full>
+      <full lang="fr">Suisse</full>
+    </key>
+    <key value="SY">
+      <full lang="en">Syrian Arab Republic</full>
+      <full lang="fr">Syrienne, République Arabe</full>
+    </key>
+    <key value="TJ">
+      <full lang="en">Tajikistan</full>
+      <full lang="fr">Tadjikistan</full>
+    </key>
+    <key value="TH">
+      <full lang="en">Thailand</full>
+      <full lang="fr">Thaïlande</full>
+    </key>
+    <key value="TG">
+      <full lang="en">Togo</full>
+      <full lang="fr">Togo</full>
+    </key>
+    <key value="TK">
+      <full lang="en">Tokelau</full>
+      <full lang="fr">Tokelau</full>
+    </key>
+    <key value="TO">
+      <full lang="en">Tonga</full>
+      <full lang="fr">Tonga</full>
+    </key>
+    <key value="TT">
+      <full lang="en">Trinidad and Tobago</full>
+      <full lang="fr">Trinité-et-Tobago</full>
+    </key>
+    <key value="AE">
+      <full lang="en">United Arab Emirates</full>
+      <full lang="fr">Émirats arabes unis</full>
+    </key>
+    <key value="TN">
+      <full lang="en">Tunisia</full>
+      <full lang="fr">Tunisie</full>
+    </key>
+    <key value="TR">
+      <full lang="en">Turkey</full>
+      <full lang="fr">Turquie</full>
+    </key>
+    <key value="TM">
+      <full lang="en">Turkmenistan</full>
+      <full lang="fr">Turkménistan</full>
+    </key>
+    <key value="TC">
+      <full lang="en">Turks and Caicos Islands</full>
+      <full lang="fr">Turks-et-Caïcos, Îles</full>
+    </key>
+    <key value="TV">
+      <full lang="en">Tuvalu</full>
+      <full lang="fr">Tuvalu</full>
+    </key>
+    <key value="UG">
+      <full lang="en">Uganda</full>
+      <full lang="fr">Ouganda</full>
+    </key>
+    <key value="UA">
+      <full lang="en">Ukraine</full>
+      <full lang="fr">Ukraine</full>
+    </key>
+    <key value="MK">
+      <full lang="en">Macedonia, The Former Yugoslav Republic of</full>
+      <full lang="fr">Macédoine, L'Ex-République Yougoslave de</full>
+    </key>
+    <key value="EG">
+      <full lang="en">Egypt</full>
+      <full lang="fr">Égypte</full>
+    </key>
+    <key value="GB">
+      <full lang="en">United Kingdom</full>
+      <full lang="fr">Royaume-Uni</full>
+    </key>
+    <key value="GG">
+      <full lang="en">Guernsey</full>
+      <full lang="fr">Guernesey</full>
+    </key>
+    <key value="JE">
+      <full lang="en">Jersey</full>
+      <full lang="fr">Jersey</full>
+    </key>
+    <key value="IM">
+      <full lang="en">Isle of Man</full>
+      <full lang="fr">Île de Man</full>
+    </key>
+    <key value="TZ">
+      <full lang="en">Tanzania, United Republic of</full>
+      <full lang="fr">Tanzanie, République-Unie de</full>
+    </key>
+    <key value="US">
+      <full lang="en">United States</full>
+      <full lang="fr">États-Unis</full>
+    </key>
+    <key value="VI">
+      <full lang="en">Virgin Islands (U.S.)</full>
+      <full lang="fr">Îles Vierges des États-Unis</full>
+    </key>
+    <key value="BF">
+      <full lang="en">Burkina Faso</full>
+      <full lang="fr">Burkina Faso</full>
+    </key>
+    <key value="UY">
+      <full lang="en">Uruguay</full>
+      <full lang="fr">Uruguay</full>
+    </key>
+    <key value="UZ">
+      <full lang="en">Uzbekistan</full>
+      <full lang="fr">Ouzbékistan</full>
+    </key>
+    <key value="VE">
+      <full lang="en">Venezuela, Bolivarian Republic of</full>
+      <full lang="fr">Venezuela, République Bolivarienne du</full>
+    </key>
+    <key value="WF">
+      <full lang="en">Wallis and Futuna</full>
+      <full lang="fr">Wallis et Futuna</full>
+    </key>
+    <key value="WS">
+      <full lang="en">Samoa</full>
+      <full lang="fr">Samoa</full>
+    </key>
+    <key value="YE">
+      <full lang="en">Yemen</full>
+      <full lang="fr">Yémen</full>
+    </key>
+    <key value="CS">
+      <full lang="en">Serbia and Montenegro</full>
+      <full lang="fr">Serbie-et-Monténégro</full>
+    </key>
+    <key value="ZM">
+      <full lang="en">Zambia</full>
+      <full lang="fr">Zambie</full>
+    </key>
+  </code>
+  <code name="province">
+    <key value="AB" group="CA">
+      <full lang="en">Alberta</full>
+      <full lang="fr">Alberta</full>
+    </key>
+    <key value="BC" group="CA">
+      <full lang="en">British Columbia</full>
+      <full lang="fr">Colombie-Britannique</full>
+    </key>
+    <key value="MB" group="CA">
+      <full lang="en">Manitoba</full>
+      <full lang="fr">Manitoba</full>
+    </key>
+    <key value="NB" group="CA">
+      <full lang="en">New Brunswick</full>
+      <full lang="fr">Nouveau-Brunswick</full>
+    </key>
+    <key value="NL" group="CA">
+      <full lang="en">Newfoundland and Labrador</full>
+      <full lang="fr">Terre-Neuve et Labrador</full>
+    </key>
+    <key value="NS" group="CA">
+      <full lang="en">Nova Scotia</full>
+      <full lang="fr">Nouvelle-Écosse</full>
+    </key>
+    <key value="NT" group="CA">
+      <full lang="en">Northwest Territories</full>
+      <full lang="fr">Territoires du Nord-Ouest</full>
+    </key>
+    <key value="NU" group="CA">
+      <full lang="en">Nunavut</full>
+      <full lang="fr">Nunavut</full>
+    </key>
+    <key value="ON" group="CA">
+      <full lang="en">Ontario</full>
+      <full lang="fr">Ontario</full>
+    </key>
+    <key value="PE" group="CA">
+      <full lang="en">Prince Edward Island</full>
+      <full lang="fr">Île-du-Prince-Édouard</full>
+    </key>
+    <key value="QC" group="CA">
+      <full lang="en">Quebec</full>
+      <full lang="fr">Québec</full>
+    </key>
+    <key value="SK" group="CA">
+      <full lang="en">Saskatchewan</full>
+      <full lang="fr">Saskatchewan</full>
+    </key>
+    <key value="YT" group="CA">
+      <full lang="en">Yukon Territory</full>
+      <full lang="fr">Yukon Territory</full>
+    </key>
+  </code>  
+</ccc:codes>
