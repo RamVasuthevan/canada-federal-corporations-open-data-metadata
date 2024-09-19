@@ -17,6 +17,8 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
 
     - name: Set branch name
       run: |
@@ -47,12 +49,11 @@ jobs:
     - name: Create or switch to specified branch
       run: |
         git fetch origin
-        git checkout -B "${{ env.BRANCH_NAME }}" || git checkout -b "${{ env.BRANCH_NAME }}"
-        git pull origin "${{ env.BRANCH_NAME }}" || true
+        git checkout -B "${{ env.BRANCH_NAME }}" origin/"${{ env.BRANCH_NAME }}" || git checkout -b "${{ env.BRANCH_NAME }}"
 
     - name: Commit and push changes
       run: |
         git add .
         timestamp=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
         git commit -m "Downloaded: ${timestamp}: commit: ${{ github.sha }}" || echo "No changes to commit"
-        git push -u origin "${{ env.BRANCH_NAME }}"
+        git push -f origin "${{ env.BRANCH_NAME }}"
