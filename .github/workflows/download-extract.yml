@@ -40,8 +40,12 @@ jobs:
 
     - name: Move extracted files
       run: |
-        mv OPEN_DATA_*.xml ./
-        rm OPEN_DATA_SPLIT.zip
+        for file in OPEN_DATA_*.xml; do
+          if [ -f "$file" ]; then
+            mv -f "$file" ./ 2>/dev/null || true
+          fi
+        done
+        rm -f OPEN_DATA_SPLIT.zip
 
     - name: Configure Git
       run: |
