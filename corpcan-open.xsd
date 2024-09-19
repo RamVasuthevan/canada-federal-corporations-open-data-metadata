@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.ic.gc.ca/corpcan/open"
+	xmlns="http://www.ic.gc.ca/corpcan/open" elementFormDefault="unqualified">
+
+	<xsd:element name="corpcan" type="corpcan">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">The root element</xsd:documentation>
+			<xsd:documentation xml:lang="fr">L'élément de base</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	
+	<xsd:complexType name="corpcan">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">Definition of the root element</xsd:documentation>
+			<xsd:documentation xml:lang="fr">La définition du élément de base</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+            <xsd:element name="corporations" type="corporations" />
+		</xsd:sequence>
+		<xsd:attribute name="date" type="xsd:dateTime">
+			<xsd:annotation>
+				<xsd:documentation xml:lang="en">The date and time the data extract began</xsd:documentation>
+				<xsd:documentation xml:lang="fr">La date et l'heure du extrait</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+	</xsd:complexType>
+
+	<xsd:complexType name="corporations">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">A container for corporation elements</xsd:documentation>
+			<xsd:documentation xml:lang="fr">Un conteneur pour les éléments de société</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="corporation" type="corporation" maxOccurs="unbounded" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="corporation">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">A specific corporation, identified by attribute "corporationId"</xsd:documentation>
+			<xsd:documentation xml:lang="fr">Une société specifique, identifiée par l'attribut "corporationId"</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="annualReturns" type="annualReturns" minOccurs="0" />
+			<xsd:element name="acts" type="acts" minOccurs="0" />
+			<xsd:element name="statuses" type="statuses" minOccurs="0" />
+			<xsd:element name="activities" type="activities" minOccurs="0" />
+			<xsd:element name="names" type="names" minOccurs="0" />
+            <xsd:element name="addresses" type="addresses" minOccurs="0" />
+			<xsd:element name="directorLimits" type="directorLimits" minOccurs="0" />
+            <xsd:element name="businessNumbers" type="businessNumbers" minOccurs="0" />
+		</xsd:sequence>
+		<xsd:attributeGroup ref="corporationId" />
+	</xsd:complexType>
+
+	<xsd:complexType name="addresses">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">A container for address elements</xsd:documentation>
+			<xsd:documentation xml:lang="fr">Un conteneur pour les éléments d'adresse</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="address" type="address" maxOccurs="unbounded" />
+		</xsd:sequence>
+	</xsd:complexType>
+		
+	<xsd:complexType name="address">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">An address qualified by attribute "code" (see codes.xml)</xsd:documentation>
+			<xsd:documentation xml:lang="fr">Une adresse qualifié par l'attribut "code" (voir codes.xml)</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="addressLine" type="xsd:string" minOccurs="0" maxOccurs="2">
+				<xsd:annotation>
+					<xsd:documentation xml:lang="en">The first one or two lines in an address</xsd:documentation>
+					<xsd:documentation xml:lang="fr">Les une ou deux premières lignes dans une adresse</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="city" type="xsd:string" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation xml:lang="en">A city</xsd:documentation>
+					<xsd:documentation xml:lang="fr">La ville</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="province" type="province" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation xml:lang="en">A province qualified by attribute "code" (see codes.xml)</xsd:documentation>
+					<xsd:documentation xml:lang="fr">Une province qualifié par l'attribut "code" (voir codes.xml)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="country" type="country" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation xml:lang="en">A country qualified by attribute "code" (see codes.xml)</xsd:documentation>
+					<xsd:documentation xml:lang="fr">Un pays qualifié par l'attribut "code" (voir codes.xml)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="postalCode" type="xsd:string" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation xml:lang="en">A postal code</xsd:documentation>
+					<xsd:documentation xml:lang="fr">Un code postal</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+		<xsd:attributeGroup ref="code" />
+	</xsd:complexType>
+
+	<xsd:complexType name="province">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">A province identified by attribute "code" (see codes.xml)</xsd:documentation>
+			<xsd:documentation xml:lang="fr">Une province qualifié par l'attribut "code" (voir codes.xml)</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attributeGroup ref="code" />
+	</xsd:complexType>
+
+	<xsd:complexType name="country">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">A country identified by attribute "code" (see codes.xml)</xsd:documentation>
+			<xsd:documentation xml:lang="fr">Un pays qualifié par l'attribut "code" (voir codes.xml)</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attributeGroup ref="code" />
+	</xsd:complexType>
+
+	 <xsd:complexType name="annualReturns">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">A container for annualReturn elements</xsd:documentation>
+			<xsd:documentation xml:lang="fr">Un conteneur pour les éléments "annualReturn"</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="annualReturn" type="annualReturn" maxOccurs="unbounded" />
+		</xsd:sequence>		
+	</xsd:complexType>
+	
+	<xsd:complexType name="annualReturn">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">An annual return</xsd:documentation>
+			<xsd:documentation xml:lang="fr">Un rapport annuel </xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="annualMeetingDate" type="xsd:date" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation xml:lang="en">The date of an annual meeting</xsd:documentation>
+					<xsd:documentation xml:lang="fr">La date du assemblée annuel</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="typeOfCorporation" type="typeOfCorporation" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation xml:lang="en">A typeOfCorporation qualified by attribute "code" (see codes.xml)</xsd:documentation>
+					<xsd:documentation xml:lang="fr">Un "typeOfCorporation" qualifié par l'attribut "code" (voir codes.xml)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:complexType name="acts">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">A container for act elements</xsd:documentation>
+			<xsd:documentation xml:lang="fr">Un conteneur pour les éléments act</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="act" type="act" maxOccurs="unbounded" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="act">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">An act qualified by attribute "code" (see codes.xml)</xsd:documentation>
+			<xsd:documentation xml:lang="fr">Un "act" qualifié par l'attribut "code" (voir codes.xml)</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attributeGroup ref="code" />
+	</xsd:complexType>
+
+	<xsd:complexType name="activities">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">A container for activity elements</xsd:documentation>
+			<xsd:documentation xml:lang="fr">Un conteneur pour les éléments "activity"</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="activity" type="activity" maxOccurs="unbounded" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="activity">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">An activity qualified by attribute "code" (see codes.xml)</xsd:documentation>
+			<xsd:documentation xml:lang="fr">Un activité qualifié par l'attribut "code" (voir codes.xml)</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attributeGroup ref="code" />
+		<xsd:attribute name="date" type="xsd:dateTime" use="required">
+			<xsd:annotation>
+				<xsd:documentation xml:lang="en">The effective date for this activity</xsd:documentation>
+				<xsd:documentation xml:lang="fr">La date effective de cette activité</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+	</xsd:complexType>
+
+	<xsd:complexType name="statuses">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">A container for status elements</xsd:documentation>
+			<xsd:documentation xml:lang="fr">Un conteneur pour les éléments "status"</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="status" type="status" maxOccurs="unbounded" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="status">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">A status qualified by attribute "code" (see codes.xml)</xsd:documentation>
+			<xsd:documentation xml:lang="fr">Un status qualifié par l'attribut "code" (voir codes.xml)</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attributeGroup ref="code" />
+	</xsd:complexType>
+
+	<xsd:complexType name="names">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">A container for name elements</xsd:documentation>
+			<xsd:documentation xml:lang="fr">Un conteneur pour les éléments "name"</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="name" type="name" maxOccurs="unbounded" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="name">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">A corporation name qualified by attribute "code" (see codes.xml)</xsd:documentation>
+			<xsd:documentation xml:lang="fr">Un nom de société qualifié par l'attribut "code" (voir codes.xml)</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attributeGroup ref="code" />
+				<xsd:attributeGroup ref="phase" />
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="directorLimits">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">A container for directorLimit elements</xsd:documentation>
+			<xsd:documentation xml:lang="fr">Un conteneur pour les éléments "directorLimit"</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="directorLimit" type="directorLimit" maxOccurs="unbounded" />
+		</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:complexType name="directorLimit">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">The minimum and maximum number of directors</xsd:documentation>
+			<xsd:documentation xml:lang="fr">Le minimum et le maximum nombre d'administrateurs</xsd:documentation>
+		</xsd:annotation>
+        <xsd:sequence>
+            <xsd:element name="minimum" type="xsd:int" minOccurs="0" />
+            <xsd:element name="maximum" type="xsd:int" minOccurs="0" />
+        </xsd:sequence>
+    </xsd:complexType>
+    
+      <xsd:complexType name="businessNumbers">
+    <xsd:annotation>
+      <xsd:documentation xml:lang="en">A container for businessNumber elements</xsd:documentation>
+      <xsd:documentation xml:lang="fr">Un conteneur pour les éléments "businessNumber"</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+     <xsd:element name="businessNumber" type="businessNumber" maxOccurs="unbounded" />
+    </xsd:sequence>    
+  </xsd:complexType>
+  
+  <xsd:complexType name="businessNumber">
+    <xsd:annotation>      
+      <xsd:documentation xml:lang="en">The current business number for the corporation.</xsd:documentation>
+      <xsd:documentation xml:lang="fr">Le courant numéro d'entreprise pour la corporation.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleContent>
+      <xsd:extension base="xsd:string"/>
+    </xsd:simpleContent>
+  </xsd:complexType>  
+		
+	<xsd:complexType name="typeOfCorporation">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">A corporation type identified by attribute "code" (see codes.xml)</xsd:documentation>
+			<xsd:documentation xml:lang="fr">Un type de société qualifié par l'attribut "code" (voir codes.xml)</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attributeGroup ref="code" />
+	</xsd:complexType>
+
+    <xsd:attributeGroup name="phase">
+        <xsd:attribute name="current" type="xsd:boolean" default="false">
+			<xsd:annotation>
+				<xsd:documentation xml:lang="en">Indicator that data was current at time of extract</xsd:documentation>
+				<xsd:documentation xml:lang="fr">Indicateur que les données étaient en cours au moment de l'extrait</xsd:documentation>
+			</xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="effectiveDate" type="xsd:dateTime">
+			<xsd:annotation>
+				<xsd:documentation xml:lang="en">The date when the data became effective</xsd:documentation>
+				<xsd:documentation xml:lang="fr">La date à laquelle les données sont entrées en vigueur</xsd:documentation>
+			</xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="expiryDate" type="xsd:dateTime">
+			<xsd:annotation>
+				<xsd:documentation xml:lang="en">The date when the data was expired</xsd:documentation>
+				<xsd:documentation xml:lang="fr">La date à laquelle les données ont été expiré</xsd:documentation>
+			</xsd:annotation>
+        </xsd:attribute>
+    </xsd:attributeGroup>
+    
+    <xsd:attributeGroup name="code">
+		<xsd:attribute name="code" type="xsd:string">
+			<xsd:annotation>
+				<xsd:documentation xml:lang="en">A lookup code (see codes.xml)</xsd:documentation>
+				<xsd:documentation xml:lang="fr">Un code à consulter (voir codes.xml)</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+	</xsd:attributeGroup>
+	
+    <xsd:attributeGroup name="corporationId">
+		<xsd:attribute name="corporationId" type="xsd:long">
+			<xsd:annotation>
+				<xsd:documentation xml:lang="en">A corporation id, also known as the Corporation Number</xsd:documentation>
+				<xsd:documentation xml:lang="fr">Une identification de société, également connu sous le numéro de société</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+	</xsd:attributeGroup>
+ 	
+</xsd:schema>
