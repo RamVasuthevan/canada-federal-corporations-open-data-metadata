@@ -25,7 +25,7 @@ jobs:
         elif [ "${{ github.event_name }}" = "pull_request" ]; then
           echo "BRANCH_NAME=${{ github.head_ref }}" >> $GITHUB_ENV
         else
-          echo "BRANCH_NAME=main" >> $GITHUB_ENV
+          echo "BRANCH_NAME=dont-unzip-large-xml" >> $GITHUB_ENV
         fi
 
     - name: Download files
@@ -47,12 +47,12 @@ jobs:
     - name: Create or switch to specified branch
       run: |
         git fetch origin
-        git checkout -B ${{ env.BRANCH_NAME }} origin/${{ env.BRANCH_NAME }} || git checkout -b ${{ env.BRANCH_NAME }}
-        git pull origin ${{ env.BRANCH_NAME }} || true
+        git checkout -B "${{ env.BRANCH_NAME }}" || git checkout -b "${{ env.BRANCH_NAME }}"
+        git pull origin "${{ env.BRANCH_NAME }}" || true
 
     - name: Commit and push changes
       run: |
-        timestamp=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
         git add .
+        timestamp=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
         git commit -m "Downloaded: ${timestamp}: commit: ${{ github.sha }}" || echo "No changes to commit"
-        git push -u origin ${{ env.BRANCH_NAME }}
+        git push -u origin "${{ env.BRANCH_NAME }}"
