@@ -36,8 +36,7 @@ jobs:
         wget -O OPEN_DATA_SPLIT.zip https://ised-isde.canada.ca/cc/lgcy/download/OPEN_DATA_SPLIT.zip
 
     - name: Unzip the file
-      run: unzip OPEN_DATA_SPLIT.zip
-
+      run: unzip -x 'OPEN_DATA_*.xml' OPEN_DATA_SPLIT.zip
     - name: Move extracted files
       run: |
         for file in OPEN_DATA_*.xml; do
