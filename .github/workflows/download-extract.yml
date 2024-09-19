@@ -1,0 +1,62 @@
+name: Download, Extract, and Save Files
+
+on:
+  workflow_dispatch:
+    inputs:
+      branch_name:
+        description: 'Branch to commit changes to'
+        required: true
+        default: 'main'
+  pull_request:
+    types: [opened, synchronize, reopened]
+  schedule:
+    - cron: '0 5 * * *'  # This is midnight EST (5:00 UTC)
+
+jobs:
+  process-files:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set branch name
+      run: |
+        if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+          echo "BRANCH_NAME=${{ github.event.inputs.branch_name }}" >> $GITHUB_ENV
+        elif [ "${{ github.event_name }}" = "pull_request" ]; then
+          echo "BRANCH_NAME=${{ github.head_ref }}" >> $GITHUB_ENV
+        else
+          echo "BRANCH_NAME=main" >> $GITHUB_ENV
+        fi
+
+    - name: Download files
+      run: |
+        wget -O dataset.html https://open.canada.ca/data/en/dataset/0032ce54-c5dd-4b66-99a0-320a7b5e99f2
+        wget -O OPEN_DATA_SPLIT.zip https://ised-isde.canada.ca/cc/lgcy/download/OPEN_DATA_SPLIT.zip
+
+    - name: Unzip the file
+      run: unzip OPEN_DATA_SPLIT.zip
+
+    - name: Move extracted files
+      run: |
+        mv OPEN_DATA_*.xml ./
+        rm OPEN_DATA_SPLIT.zip
+
+    - name: Configure Git
+      run: |
+        git config user.name "Automated"
+        git config user.email "actions@users.noreply.github.com"
+
+    - name: Create or switch to specified branch
+      run: |
+        git fetch origin
+        git checkout -B ${{ env.BRANCH_NAME }} origin/${{ env.BRANCH_NAME }} || git checkout -b ${{ env.BRANCH_NAME }}
+        git pull origin ${{ env.BRANCH_NAME }} || true
+
+    - name: Commit and push changes
+      run: |
+        timestamp=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
+        git add .
+        git commit -m "Downloaded: ${timestamp}: commit: ${{ github.sha }}" || echo "No changes to commit"
+        git push -u origin ${{ env.BRANCH_NAME }}
