@@ -4,7 +4,10 @@
   <head>
     
   <meta charset="utf-8" />
-      <meta name="generator" content="ckan 2.9.9" />
+      <meta name="csrf_field_name" content="_csrf_token" />
+      <meta name="_csrf_token" content="ImI1NzQxMGVjMWZhMDgyNmUxYjliNTljOTA3Y2JkMGZkMjBjMzhiMjgi.Z2ZMPw.b8Dq8a0RUfVIttsDDO1p8nA4YsU" />
+
+      <meta name="generator" content="ckan 2.10.4" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
     <meta property="og:title" content="Federal Corporations - Open Government Portal">
@@ -61,10 +64,13 @@
   
 
   
+  
       
       
       
     
+  
+
   
 
 
@@ -74,13 +80,13 @@
     
   
   <meta property="og:title" content="Federal Corporations - Open Government Portal">
-  <meta property="og:description" content="The database contains information about the following types of federal corporations: 
-Business corporations created under the Canada Business Corporations Act (CBCA), Not-for-profit corporations...">
+  <meta property="og:description" content="The database contains information about the following types of federal corporations: Business corporations created under the Canada Business Corporations Act (CBCA), Not-for-profit corporations...">
 
 
     
-    <link href="/data/webassets/base/0bdb3d5e_main.css" rel="stylesheet"/>
+    <link href="/data/webassets/base/b8878992_main.css" rel="stylesheet"/>
 <link href="/data/webassets/ckanext-scheming/728ec589_scheming_css.css" rel="stylesheet"/>
+<link href="/data/webassets/ckanext-activity/5ee4e4a8_activity.css" rel="stylesheet"/>
   
   
   <script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_1/cdts/compiled/soyutils.js"></script>
@@ -167,6 +173,8 @@ Business corporations created under the Canada Business Corporations Act (CBCA),
     
     
     
+
+
   <div id="app-top"></div>
   
 
@@ -214,7 +222,6 @@ Business corporations created under the Canada Business Corporations Act (CBCA),
     
     
   </h1>
-  
 
           
             <div class="row">
@@ -227,27 +234,17 @@ Business corporations created under the Canada Business Corporations Act (CBCA),
               </div>
             </div>
           
-          <div class="row wb-eqht">
+          <div class="row  wb-eqht ">
             
-              <div class="col-md-9 col-md-push-3">
+              
+            
+            
+              <div class=" col-md-9 col-md-push-3 ">
                 
-                  
-                    
+                  <article class="module">
+                    <div class="module-content mrgn-tp-lg canada-page-main-wrapper">
                       
-                      <header class="module-content page-header">
-                        
-                        <ul class="nav nav-tabs">
-                          
-  
-
-                        </ul>
-                      </header>
-                    
-                    
-                    <div class="row">
-                      <div class="col-md-12">
-                        
-                        
+                      
   <div vocab="http://schema.org/" typeof="Dataset" style="display:none;">
   <div property="includedInDataCatalog" typeof="DataCatalog">
     <span property="name" value="Government of Canada Open Government Portal"></span>
@@ -261,8 +258,9 @@ Business corporations created under the Canada Business Corporations Act (CBCA),
       <span property="email" value="open-ouvert@tbs-sct.gc.ca"></span>
     </span>
     <span property="genre" value="Information and Communications Government and Politics"></span>
-    <span property="license" typeof="CreativeWork"><span property="name" value="Open Government Licence - Canada"></span>
-      <span property="sameAs" value="http://open.canada.ca/en/open-government-licence-canada"></span>
+    <span property="license" typeof="CreativeWork">
+      <span property="name" value="Open Government Licence - Canada"></span>
+      <span property="sameAs" value="https://open.canada.ca/en/open-government-licence-canada"></span>
       <span property="text" value="Rights under which the catalog can be reused are outlined in the Open Government Licence - Canada"></span>
     </span>
   </div>
@@ -279,21 +277,21 @@ The database does NOT include  information about corporations created under fina
     <span property="email">open-ouvert@tbs-sct.gc.ca</span>
   </span><span property="temporalCoverage" value="1831-10-05/"></span><span property="genre">Economics and Industry</span><span property="keywords">federal corporations</span><span property="keywords">business corporations</span><span property="keywords">company</span><span property="keywords">companies</span><span property="keywords">Not-for-profit corporations</span><span property="keywords">Not-for-profit organizations</span><span property="keywords">non-profit corporations</span><span property="keywords">non-profit organizations</span><span property="keywords">Corporations Canada</span><span property="keywords">Canada Business Corporations Act</span><span property="keywords">Canada Corporations Act</span><span property="keywords">Canada Not-for profit Corporations Act</span><span property="keywords">Canada Cooperatives Act</span><span property="keywords">Boards of Trade Act</span>
   <span property="sameAs" value="/data/en/dataset/0032ce54-c5dd-4b66-99a0-320a7b5e99f2"></span>
-        <span property="distribution" typeof="DataDownload">
-          <span property="inLanguage" content="en,fr"> </span>
-          <span property="name" lang="en">Federal Corporations</span><span property="fileFormat">XML</span>
-          <span property="url">https://ised-isde.canada.ca/cc/lgcy/download/OPEN_DATA_SPLIT.zip</span>
-        </span>
-        <span property="distribution" typeof="DataDownload">
-          <span property="inLanguage" content="en"> </span>
-          <span property="name" lang="en">API Documentation</span><span property="fileFormat">HTML</span>
-          <span property="url">https://www.ic.gc.ca/eic/site/cd-dgc.nsf/eng/cs07265.html</span>
-        </span>
-        <span property="distribution" typeof="DataDownload">
-          <span property="inLanguage" content="fr"> </span>
-          <span property="name" lang="en">API Documentation</span><span property="fileFormat">HTML</span>
-          <span property="url">https://www.ic.gc.ca/eic/site/cd-dgc.nsf/fra/cs07265.html</span>
-        </span></div>
+      <span property="distribution" typeof="DataDownload">
+        <span property="inLanguage" content="en,fr"> </span>
+        <span property="name" lang="en">Federal Corporations</span><span property="fileFormat">XML</span>
+        <span property="url">https://ised-isde.canada.ca/cc/lgcy/download/OPEN_DATA_SPLIT.zip</span>
+      </span>
+      <span property="distribution" typeof="DataDownload">
+        <span property="inLanguage" content="en"> </span>
+        <span property="name" lang="en">API Documentation</span><span property="fileFormat">HTML</span>
+        <span property="url">https://www.ic.gc.ca/eic/site/cd-dgc.nsf/eng/cs07265.html</span>
+      </span>
+      <span property="distribution" typeof="DataDownload">
+        <span property="inLanguage" content="fr"> </span>
+        <span property="name" lang="en">API Documentation</span><span property="fileFormat">HTML</span>
+        <span property="url">https://www.ic.gc.ca/eic/site/cd-dgc.nsf/fra/cs07265.html</span>
+      </span></div>
   <div class="module">
     
       
@@ -367,7 +365,8 @@ The database does NOT include  information about corporations created under fina
                 
                 <li class="list-group-item"><strong>Licence:</strong>
                   
-  <a href="http://open.canada.ca/en/open-government-licence-canada">Open Government Licence - Canada</a>
+
+  <a href="https://open.canada.ca/en/open-government-licence-canada">Open Government Licence - Canada</a>
 
                 </li>
               
@@ -380,9 +379,12 @@ The database does NOT include  information about corporations created under fina
       
         
     
+    
+
 <section id="dataset-resources" class="resources">
   
   <h2>Data and Resources
+    
     
     
   </h2>
@@ -391,9 +393,9 @@ The database does NOT include  information about corporations created under fina
     
       <ul class="resource-list">
         
-          
-          
-            
+  
+    
+    
 
 
 
@@ -412,359 +414,364 @@ The database does NOT include  information about corporations created under fina
     
       
         
-          <span class="badge res-tag res-tag-lang">
-            English
-          </span>
+          
+            <span class="badge res-tag res-tag-lang">
+              English
+            </span>
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
       
     
       
         
-      
+          
         
-          <span class="badge res-tag res-tag-lang">
-            French
-          </span>
+          
+            <span class="badge res-tag res-tag-lang">
+              French
+            </span>
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
       
+    
     
     
       <span class="badge res-tag">
@@ -785,15 +792,15 @@ The database does NOT include  information about corporations created under fina
   
   
     <div class="dropdown btn-group resource-action-links">
-      <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-        <i class="fa fa-share"></i>&nbsp;Explore&nbsp;<span class="caret"></span>
+      <a href="javascript:void(0);" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" type="button" id="dropdownExplorer" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="fa fa-share" aria-hidden="true"></i>&nbsp;Explore
       </a>
-      <ul class="dropdown-menu">
+      <ul class="dropdown-menu canada-resource-dropdown-explore">
         
           <li>
             <a href="/data/en/dataset/0032ce54-c5dd-4b66-99a0-320a7b5e99f2/resource/164ae5ee-8ba2-447e-a443-0ea42a9b10bc">
               
-                <i class="fa fa-info-circle"></i>&nbsp;More information
+                <i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;More information
               
             </a>
           </li>
@@ -801,7 +808,7 @@ The database does NOT include  information about corporations created under fina
             <li>
               <a href="https://ised-isde.canada.ca/cc/lgcy/download/OPEN_DATA_SPLIT.zip" class="resource-url-analytics" target="_blank" data-pkg-id="0032ce54-c5dd-4b66-99a0-320a7b5e99f2" data-res-id="164ae5ee-8ba2-447e-a443-0ea42a9b10bc" data-org-id="06CC519C-E56E-4FC8-8B9C-BE0A461E3CD9">
                 
-                  <i class="fa fa-external-link"></i>&nbsp;Go to resource
+                  <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;Go to resource
                 
               </a>
             </li>
@@ -815,8 +822,9 @@ The database does NOT include  information about corporations created under fina
   
 
 </li>
-          
-            
+  
+    
+    
 
 
 
@@ -835,181 +843,184 @@ The database does NOT include  information about corporations created under fina
     
       
         
-          <span class="badge res-tag res-tag-lang">
-            English
-          </span>
+          
+            <span class="badge res-tag res-tag-lang">
+              English
+            </span>
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
       
+    
     
     
       <span class="badge res-tag">
@@ -1030,15 +1041,15 @@ The database does NOT include  information about corporations created under fina
   
   
     <div class="dropdown btn-group resource-action-links">
-      <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-        <i class="fa fa-share"></i>&nbsp;Explore&nbsp;<span class="caret"></span>
+      <a href="javascript:void(0);" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" type="button" id="dropdownExplorer" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="fa fa-share" aria-hidden="true"></i>&nbsp;Explore
       </a>
-      <ul class="dropdown-menu">
+      <ul class="dropdown-menu canada-resource-dropdown-explore">
         
           <li>
             <a href="/data/en/dataset/0032ce54-c5dd-4b66-99a0-320a7b5e99f2/resource/e83e9eb0-824b-4153-8dad-4e0d6ef62e28">
               
-                <i class="fa fa-info-circle"></i>&nbsp;More information
+                <i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;More information
               
             </a>
           </li>
@@ -1046,7 +1057,7 @@ The database does NOT include  information about corporations created under fina
             <li>
               <a href="https://www.ic.gc.ca/eic/site/cd-dgc.nsf/eng/cs07265.html" class="resource-url-analytics" target="_blank" data-pkg-id="0032ce54-c5dd-4b66-99a0-320a7b5e99f2" data-res-id="e83e9eb0-824b-4153-8dad-4e0d6ef62e28" data-org-id="06CC519C-E56E-4FC8-8B9C-BE0A461E3CD9">
                 
-                  <i class="fa fa-external-link"></i>&nbsp;Go to resource
+                  <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;Go to resource
                 
               </a>
             </li>
@@ -1060,8 +1071,9 @@ The database does NOT include  information about corporations created under fina
   
 
 </li>
-          
-            
+  
+    
+    
 
 
 
@@ -1080,181 +1092,184 @@ The database does NOT include  information about corporations created under fina
     
       
         
-      
+          
         
-          <span class="badge res-tag res-tag-lang">
-            French
-          </span>
+          
+            <span class="badge res-tag res-tag-lang">
+              French
+            </span>
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
-      
+          
         
       
+    
     
     
       <span class="badge res-tag">
@@ -1275,15 +1290,15 @@ The database does NOT include  information about corporations created under fina
   
   
     <div class="dropdown btn-group resource-action-links">
-      <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-        <i class="fa fa-share"></i>&nbsp;Explore&nbsp;<span class="caret"></span>
+      <a href="javascript:void(0);" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" type="button" id="dropdownExplorer" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="fa fa-share" aria-hidden="true"></i>&nbsp;Explore
       </a>
-      <ul class="dropdown-menu">
+      <ul class="dropdown-menu canada-resource-dropdown-explore">
         
           <li>
             <a href="/data/en/dataset/0032ce54-c5dd-4b66-99a0-320a7b5e99f2/resource/582644d6-e3a2-4fc6-a647-a07d81cc8104">
               
-                <i class="fa fa-info-circle"></i>&nbsp;More information
+                <i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;More information
               
             </a>
           </li>
@@ -1291,7 +1306,7 @@ The database does NOT include  information about corporations created under fina
             <li>
               <a href="https://www.ic.gc.ca/eic/site/cd-dgc.nsf/fra/cs07265.html" class="resource-url-analytics" target="_blank" data-pkg-id="0032ce54-c5dd-4b66-99a0-320a7b5e99f2" data-res-id="582644d6-e3a2-4fc6-a647-a07d81cc8104" data-org-id="06CC519C-E56E-4FC8-8B9C-BE0A461E3CD9">
                 
-                  <i class="fa fa-external-link"></i>&nbsp;Go to resource
+                  <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;Go to resource
                 
               </a>
             </li>
@@ -1305,28 +1320,17 @@ The database does NOT include  information about corporations created under fina
   
 
 </li>
-          
-        
+  
+
       </ul>
     
-    
+  
 </section>
   
       
     
     
-      <div class="span-6 margin-top-medium clear-both">
-        
-        
-          
-        
-          
-        
-          
-        
-      </div>
       
-    
     
     
       
@@ -1364,15 +1368,14 @@ The database does NOT include  information about corporations created under fina
     
   </div>
 
-                      </div>
                     </div>
-                  
+                  </article>
                 
               </div>
             
             
               
-                <aside class="col-md-3 col-md-pull-9 mrgn-tp-xl">
+                <aside class="col-md-3 col-md-pull-9 mrgn-tp-lg canada-page-side-wrapper">
                   
   
     
@@ -1699,7 +1702,7 @@ The database does NOT include  information about corporations created under fina
       
       <li class="list-group-item">
         <a href="/data/en/feeds/dataset/0032ce54-c5dd-4b66-99a0-320a7b5e99f2.atom" title="RSS">
-          <span class="fa fa-rss-square"></span>&nbsp;Atom Feed
+          <span class="fa fa-rss-square" aria-hidden="true"></span>&nbsp;Atom Feed
         </a>
       </li>
       
@@ -1754,6 +1757,7 @@ The database does NOT include  information about corporations created under fina
 </script>
   
   
+    
   
     
   
@@ -1761,6 +1765,15 @@ The database does NOT include  information about corporations created under fina
   
   
     
+
+    
+        
+        
+        
+    
+
+
+  
 
   
 
@@ -1776,19 +1789,21 @@ The database does NOT include  information about corporations created under fina
 
     
     
-    <link href="/data/webassets/canada_public/91efaf0a_canada_public.css" rel="stylesheet"/>
+    <link href="/data/webassets/canada_public/1148008d_canada_public.css" rel="stylesheet"/>
 <link href="/data/webassets/invitation_manager/b0dc356d_invitation_manager.css" rel="stylesheet"/>
 <link href="/data/webassets/vendor/f3b8236b_select2.css" rel="stylesheet"/>
-<link href="/data/webassets/vendor/0b01aef1_font-awesome.css" rel="stylesheet"/>
+<link href="/data/webassets/vendor/d05bf0e7_fontawesome.css" rel="stylesheet"/>
     <script src="/data/webassets/canada_public/1e1601b9_more_like_this.js" type="text/javascript"></script>
 <script src="/data/webassets/canada_public/1da89540_voting_fix.js" type="text/javascript"></script>
 <script src="/data/webassets/invitation_manager/ecf68db1_invitation_manager.js" type="text/javascript"></script>
-<script src="/data/webassets/canada_public/7d7cf701_csrf.js" type="text/javascript"></script>
 <script src="/data/webassets/canada_public/562e1564_canada_public_analytics.js" type="text/javascript"></script>
-<script src="/data/webassets/vendor/d8ae4bed_jquery.js" type="text/javascript"></script>
-<script src="/data/webassets/vendor/fb6095a0_vendor.js" type="text/javascript"></script>
-<script src="/data/webassets/vendor/580fa18d_bootstrap.js" type="text/javascript"></script>
-<script src="/data/webassets/base/15a18f6c_main.js" type="text/javascript"></script>
-<script src="/data/webassets/base/0d57b891_ckan.js" type="text/javascript"></script>
+<script src="/data/webassets/vendor/8c3c143a_jquery.js" type="text/javascript"></script>
+<script src="/data/webassets/vendor/5027b870_vendor.js" type="text/javascript"></script>
+<script src="/data/webassets/vendor/6d1ad7e6_bootstrap.js" type="text/javascript"></script>
+<script src="/data/webassets/base/6fddaa3f_main.js" type="text/javascript"></script>
+<script src="/data/webassets/base/0d39d542_ckan.js" type="text/javascript"></script>
+<script src="/data/webassets/vendor/9c4cfd9c_fileupload.js" type="text/javascript"></script>
+<script src="/data/webassets/ckanext-cloudstorage/06b9ac90_main.js" type="text/javascript"></script>
+<script src="/data/webassets/activity/0fdb5ee0_activity.js" type="text/javascript"></script>
   </body>
 </html>
